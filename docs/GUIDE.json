@@ -1,0 +1,77 @@
+{
+  "title": "Islamic Civil Calendar",
+  "intro": "This is a calculated, or tabular, Islamic lunar calendar. Its dates are worked out using a repeating arithmetic rule, so no observation of the crescent Moon is needed to determine a month.",
+  "summary": "Twelve lunar months, usually alternating 30 and 29 days. A calendar year contains 354 or 355 days.",
+  "origin": "The arithmetic civil convention is one way to calculate Hijri dates. The model here uses the project's documented Friday-epoch rule and is distinct from local crescent-based religious calendars.",
+  "ring_label": "12",
+  "diagram_title": "TWELVE LUNAR MONTHS",
+  "structure": "Each lunar month is shorter than a typical solar month. The civil calculation usually alternates between 30 and 29 days; some years add a day to the final month.",
+  "diagram_caption": "TWELVE CALCULATED MONTHS  /  354 OR 355 DAYS",
+  "sections": [
+    {
+      "name": "Muharram",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Safar",
+      "days": "29",
+      "special": false
+    },
+    {
+      "name": "Rabi al-Awwal",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Rabi al-Thani",
+      "days": "29",
+      "special": false
+    },
+    {
+      "name": "Jumada al-Ula",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Jumada al-Akhira",
+      "days": "29",
+      "special": false
+    },
+    {
+      "name": "Rajab",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Sha'ban",
+      "days": "29",
+      "special": false
+    },
+    {
+      "name": "Ramadan",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Shawwal",
+      "days": "29",
+      "special": false
+    },
+    {
+      "name": "Dhu al-Qadah",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Dhu al-Hijjah",
+      "days": "29/30",
+      "special": true
+    }
+  ],
+  "pattern_note": "A regular mathematical leap pattern determines when the final month has 30 rather than 29 days. This keeps civil calculations reproducible without Moon sighting reports.",
+  "history": "Muslim societies have used more than one method of determining Hijri dates. Computed tables are useful for records and planning, but actual religious observance can follow local crescent reports or a particular authority.",
+  "example": "Ramadan is the ninth month. Its date in a civil table may differ from a community's Ramadan start announced after observing or accepting a crescent sighting.",
+  "limits": "This tabular civil calendar is not a prediction of the actual crescent's visibility, not a universal religious ruling, and not a substitute for local historical evidence.",
+  "source": "https://github.com/Infiltrator-Projects/Calendar-Islamic-Civil"
+}
