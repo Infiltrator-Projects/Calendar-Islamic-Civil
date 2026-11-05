@@ -48,4 +48,4 @@ Each package owns only this provider and its passive documentation. Its `Replace
 
 ## User guide
 
-Release 1.0.2 installs only `Islamic Civil Calendar.so` and `Islamic Civil Calendar.pdf`. Repository development documents and build evidence are not separately installed; provenance is retained in Debian control metadata. The guide source is `docs/GUIDE.json`.
+Release 1.0.2 installs only `Islamic Civil Calendar.so` and `Calendar-Islamic-Civil.pdf`. Repository development documents and build evidence are not separately installed; provenance is retained in Debian control metadata. The guide source is `docs/GUIDE.json`.
