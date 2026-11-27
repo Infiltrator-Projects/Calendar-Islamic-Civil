@@ -1,12 +1,8 @@
 {
   "title": "Islamic Civil Calendar",
-  "intro": "This is a calculated, or tabular, Islamic lunar calendar. Its dates are worked out using a repeating arithmetic rule, so no observation of the crescent Moon is needed to determine a month.",
-  "summary": "Twelve lunar months, usually alternating 30 and 29 days. A calendar year contains 354 or 355 days.",
-  "origin": "The arithmetic civil convention is one way to calculate Hijri dates. The model here uses the project's documented Friday-epoch rule and is distinct from local crescent-based religious calendars.",
-  "ring_label": "12",
-  "diagram_title": "TWELVE LUNAR MONTHS",
-  "structure": "Each lunar month is shorter than a typical solar month. The civil calculation usually alternates between 30 and 29 days; some years add a day to the final month.",
-  "diagram_caption": "TWELVE CALCULATED MONTHS  /  354 OR 355 DAYS",
+  "intro": "The Islamic Civil calendar is a deterministic tabular Hijri date system using the Friday epoch.",
+  "epoch": "1 Muharram AH 1 corresponds to JDN 1948440 (16 July 622 Julian).",
+  "structure": "Twelve months alternate 30 and 29 days; the final month, Dhu al-Hijjah, has 30 days in a leap year. The year contains 354 or 355 days.",
   "sections": [
     {
       "name": "Muharram",
@@ -69,9 +65,12 @@
       "special": true
     }
   ],
-  "pattern_note": "A regular mathematical leap pattern determines when the final month has 30 rather than 29 days. This keeps civil calculations reproducible without Moon sighting reports.",
-  "history": "Muslim societies have used more than one method of determining Hijri dates. Computed tables are useful for records and planning, but actual religious observance can follow local crescent reports or a particular authority.",
-  "example": "Ramadan is the ninth month. Its date in a civil table may differ from a community's Ramadan start announced after observing or accepting a crescent sighting.",
-  "limits": "This tabular civil calendar is not a prediction of the actual crescent's visibility, not a universal religious ruling, and not a substitute for local historical evidence.",
-  "source": "https://github.com/Infiltrator-Projects/Calendar-Islamic-Civil"
+  "model": "A year is leap when the positive remainder of (11 × year + 14) divided by 30 is below 11. This gives eleven leap years in a 30-year cycle (10631 days). For year y, month m and day d, JDN = epoch - 1 + d + floor((59(m-1)+1)/2) + 354(y-1) + floor((3+11y)/30). Conversion uses checked/validated arithmetic.",
+  "example": "In year 2 the final month has 30 days; in year 1 it has 29. The civil epoch is one day later than the separate astronomical-epoch tabular provider.",
+  "history": "Arithmetic tables provide a reproducible chronology for records and calculations; Islamic communities also use observation-based or authority-specific dates.",
+  "limits": "The rule is not a prediction of crescent visibility or a religious determination. Local observed or historical dates can differ.",
+  "sources": [
+    "https://github.com/Infiltrator-Projects/Calendar-Islamic-Civil",
+    "Model evidence: https://github.com/Infiltrator-Projects/Calendar-Islamic-Civil/blob/main/docs/MODEL.md"
+  ]
 }
